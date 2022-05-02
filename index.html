@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Encriptador de texto por FeedzOne</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </head>
+    <body background="C:\Users\TheKu\Documents\Curso Oracle\Encriptador\img\background.jpg" class="background">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+            <div class="container">
+				<img src="C:\Users\TheKu\Documents\Curso Oracle\Encriptador\img\alura_logo.png" alt="Alura Logo" class="logo">
+                <a class="navbar-brand" href="#">Encriptador</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </div>
+        </nav>
+		<div  id="byFeedzOne" class="text-center bg-dark">
+            <span>
+                <p style="color:white">Challenge #1 ONE & Alura.</p><br>
+            </span>
+        </div>
+        <!-- Page content-->
+        <div class="container">
+            <div class="encriptador text-center mt-5">
+                <div id="formulario">
+				<!--Encryption function-->
+					<div class="inline-div">
+						<label for="fname"><strong>Encriptar:</label><br>
+						<label type="texto" class="advertencia"><strong>&#9888; Sólo letras minúsculas y sin acento ni caracteres especiales.</strong></label><br>
+						<textarea class="textarea" id="tbencrypt" name="encrypt" rows="10" cols="100"></textarea><br>
+						<button class="boton_encriptar boton" id="btnencriptar" onclick="encriptar()">Encriptar</button><br><br>
+						<button class="boton_copiar boton" id="btncopiar" onclick="copiartexto()">Copiar Texto</button><br><br>
+							
+					</div>
+					<!--Decrypting function-->
+					<div class="inline-div">
+						<label for="lname">Desencriptar:</label><br>
+						<textarea class="textarea" id="tbdecrypt" name="decrypt" rows="10" cols="100"></textarea><br>
+						<button class="boton_desencriptar boton" id="btndesencriptar" onclick="desencriptar()">Desencriptar</button><br><br><br>
+					</div>
+				</div>
+            </div>
+        </div>
+    </body>
+	<footer class="footer footer-fixed-bottom"><br>
+		  <p class="text-footer">Created by: Erick Miguel Paredes Ortega - FeedzOne</p><br>
+		  <p style="color:white">Email:</p><a href="mailto:erick.paredes@uabc.edu.mx">erick.paredes@uabc.edu.mx</a><br><br>
+		  <p></p>
+	</footer>
+</html>
